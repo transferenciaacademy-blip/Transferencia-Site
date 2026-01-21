@@ -6,8 +6,8 @@ const ComoFunciona = () => {
     {
       icon: Search,
       number: '01',
-      title: 'Escolha seu Curso',
-      description: 'Selecione a universidade e o curso para o qual deseja transferência',
+      title: 'Escolha sua Universidade',
+      description: 'Selecione a universidade alvo para sua transferência em Medicina',
       color: 'from-[#D4A017] to-[#B8900F]',
     },
     {
@@ -21,7 +21,7 @@ const ComoFunciona = () => {
       icon: BookMarked,
       number: '03',
       title: 'Estude com Foco',
-      description: 'Acesse aulas, materiais e simulados específicos para seu edital',
+      description: 'Acesse aulas, materiais e simulados específicos para Medicina',
       color: 'from-[#D4A017] to-[#B8900F]',
     },
     {

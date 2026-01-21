@@ -31,7 +31,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              A maior plataforma especializada em preparação para transferências universitárias do Brasil.
+              A maior plataforma especializada em preparação para transferências de Medicina do Brasil.
             </p>
             <div className="flex gap-4">
               {[

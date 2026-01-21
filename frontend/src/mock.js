@@ -126,8 +126,8 @@ export const mockDiferenciais = [
 export const mockComoFunciona = [
   {
     id: 1,
-    titulo: "Escolha seu Curso",
-    descricao: "Selecione a universidade e o curso para o qual deseja transferência",
+    titulo: "Escolha sua Universidade",
+    descricao: "Selecione a universidade alvo para sua transferência em Medicina",
     icon: "Search",
   },
   {
@@ -139,7 +139,7 @@ export const mockComoFunciona = [
   {
     id: 3,
     titulo: "Estude com Foco",
-    descricao: "Acesse aulas, materiais e simulados específicos para seu edital",
+    descricao: "Acesse aulas, materiais e simulados específicos para Medicina",
     icon: "BookMarked",
   },
   {

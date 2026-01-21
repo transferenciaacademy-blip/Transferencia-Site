@@ -28,12 +28,12 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-slide-up">
-            Realize seu sonho de estudar na
-            <span className="text-[#D4A017] block mt-2">universidade ideal</span>
+            Realize seu sonho de estudar
+            <span className="text-[#D4A017] block mt-2">Medicina na universidade ideal</span>
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-2xl animate-slide-up animation-delay-200">
-            A Transferência Academy prepara você para conquistar sua vaga nas melhores universidades do Brasil através de transferência externa.
+            A Transferência Academy prepara você para conquistar sua vaga em Medicina nas melhores universidades do Brasil através de transferência externa.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up animation-delay-400">

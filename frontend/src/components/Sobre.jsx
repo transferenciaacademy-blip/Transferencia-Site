@@ -59,13 +59,13 @@ const Sobre = () => {
               Sobre a Transferência Academy
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-[#0A1A40] mb-6">
-              Transformando sonhos em realidade acadêmica
+              Transformando sonhos em realidade na Medicina
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              A <span className="font-bold text-[#0A1A40]">Transferência Academy</span> é a primeira e maior plataforma especializada em preparação para transferências universitárias do Brasil.
+              A <span className="font-bold text-[#0A1A40]">Transferência Academy</span> é a primeira e maior plataforma especializada em preparação para transferências de Medicina do Brasil.
             </p>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Nossa missão é tornar acessível o sonho de estudar nas melhores universidades do país. Com uma equipe de professores altamente qualificados e um método de ensino comprovadamente eficaz, já ajudamos centenas de alunos a conquistarem suas vagas nas instituições mais concorridas.
+              Nossa missão é tornar acessível o sonho de estudar Medicina nas melhores universidades do país. Com uma equipe de professores altamente qualificados e um método de ensino comprovadamente eficaz, já ajudamos centenas de alunos a conquistarem suas vagas nas instituições mais concorridas.
             </p>
 
             {/* Features Grid */}
