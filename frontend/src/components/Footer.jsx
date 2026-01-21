@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Facebook, Instagram, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const handleCTA = () => {
@@ -20,9 +20,11 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-[#D4A017] rounded-lg flex items-center justify-center">
-                <GraduationCap className="w-7 h-7 text-[#0A1A40]" />
-              </div>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_transferprep/artifacts/kafcrfcg_Logo_alta_qualidade-removebg-preview.png" 
+                alt="Transferência Academy Logo"
+                className="h-14 w-auto"
+              />
               <div>
                 <h3 className="text-xl font-bold">Transferência</h3>
                 <p className="text-sm text-[#D4A017]">Academy</p>
