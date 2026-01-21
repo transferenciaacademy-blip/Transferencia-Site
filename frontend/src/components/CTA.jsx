@@ -35,23 +35,23 @@ const CTA = () => {
               {/* Benefits */}
               <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
                 {[
-                  { title: 'Início Imediato', desc: 'Comece hoje mesmo' },
-                  { title: 'Suporte 24/7', desc: 'Sempre ao seu lado' },
-                  { title: 'Garantia de Qualidade', desc: 'Método comprovado' },
-                ].map((benefit, index) => (
-                  <div key={index} className="bg-white/5 rounded-xl p-4 border border-white/10">
+                { title: 'Início Imediato', desc: 'Comece hoje mesmo' },
+                { title: 'Suporte 24/7', desc: 'Sempre ao seu lado' },
+                { title: 'Garantia de Qualidade', desc: 'Método comprovado' }].
+                map((benefit, index) =>
+                <div key={index} className="bg-white/5 rounded-xl p-4 border border-white/10">
                     <div className="text-[#D4A017] font-bold mb-1">{benefit.title}</div>
                     <div className="text-gray-300 text-sm">{benefit.desc}</div>
                   </div>
-                ))}
+                )}
               </div>
 
               {/* CTA Button */}
               <Button
                 onClick={handleCTA}
                 size="lg"
-                className="bg-[#D4A017] hover:bg-[#B8900F] text-[#0A1A40] font-bold text-xl px-12 py-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#D4A017]/50"
-              >
+                className="bg-[#D4A017] hover:bg-[#B8900F] text-[#0A1A40] font-bold text-xl px-12 py-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#D4A017]/50">
+
                 Quero Começar Agora
                 <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
@@ -75,8 +75,8 @@ const CTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CTA;
