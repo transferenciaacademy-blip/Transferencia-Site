@@ -2,6 +2,7 @@ import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import MarqueeBanner from "./components/MarqueeBanner";
 import CrossedBanners from "./components/CrossedBanners";
 import Sobre from "./components/Sobre";
 import ComoFunciona from "./components/ComoFunciona";
@@ -11,15 +12,11 @@ import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 
 const Home = () => {
-  const motivationalMessages1 = [
+  const heroMessages = [
     "Conquiste sua vaga em Medicina na universidade dos seus sonhos",
     "Sua aprovação começa aqui - Método comprovado por centenas de alunos",
     "Transforme seu futuro - Prepare-se para a transferência em Medicina",
-  ];
-
-  const motivationalMessages2 = [
     "Realize seu sonho de estudar Medicina nas melhores universidades",
-    "Não desista! A Transferência Academy está com você em cada passo",
     "500+ alunos aprovados - Junte-se aos vencedores",
   ];
 
@@ -39,11 +36,15 @@ const Home = () => {
     <div id="home">
       <Header />
       <Hero />
-      {/* Faixas cruzadas entre Hero e Sobre */}
-      <CrossedBanners 
-        messages1={motivationalMessages1}
-        messages2={motivationalMessages2}
-      />
+      {/* Faixa única dourada entre Hero e Sobre */}
+      <div className="-my-8 relative z-20">
+        <MarqueeBanner 
+          messages={heroMessages}
+          bgColor="bg-[#D4A017]"
+          textColor="text-[#0A1A40]"
+          direction="left"
+        />
+      </div>
       <Sobre />
       <ComoFunciona />
       <DepoimentosVideos />
