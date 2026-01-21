@@ -7,7 +7,7 @@ const CrossedBanners = ({ messages1, messages2 }) => {
       {/* Container para as faixas cruzadas */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Faixa Dourada - diagonal da esquerda superior para direita inferior (/) */}
-        <div className="absolute w-[160%] origin-center" style={{ transform: 'rotate(-10deg)' }}>
+        <div className="absolute w-[160%] origin-center" style={{ transform: 'rotate(-6deg)' }}>
           <MarqueeBanner 
             messages={messages1} 
             bgColor="bg-[#D4A017]"
@@ -17,7 +17,7 @@ const CrossedBanners = ({ messages1, messages2 }) => {
         </div>
 
         {/* Faixa Azul - diagonal da direita superior para esquerda inferior (\) */}
-        <div className="absolute w-[160%] origin-center" style={{ transform: 'rotate(10deg)' }}>
+        <div className="absolute w-[160%] origin-center" style={{ transform: 'rotate(6deg)' }}>
           <MarqueeBanner 
             messages={messages2} 
             bgColor="bg-[#0A1A40]"
