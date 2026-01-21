@@ -23,11 +23,23 @@ const Home = () => {
     "500+ alunos aprovados - Junte-se aos vencedores",
   ];
 
+  const ctaMessages1 = [
+    "Últimas vagas disponíveis - Garanta a sua agora",
+    "Matrículas abertas - Comece sua preparação hoje",
+    "Aproveite a oportunidade de realizar seu sonho",
+  ];
+
+  const ctaMessages2 = [
+    "Investimento que transforma vidas - Sua aprovação vale cada esforço",
+    "Método exclusivo e comprovado - Resultados garantidos",
+    "Não deixe para depois - Sua vaga em Medicina te espera",
+  ];
+
   return (
     <div id="home">
       <Header />
       <Hero />
-      {/* Faixas cruzadas em formato X */}
+      {/* Faixas cruzadas entre Hero e Sobre */}
       <CrossedBanners 
         messages1={motivationalMessages1}
         messages2={motivationalMessages2}
@@ -36,6 +48,11 @@ const Home = () => {
       <ComoFunciona />
       <DepoimentosVideos />
       <Diferenciais />
+      {/* Faixas cruzadas entre Diferenciais e CTA */}
+      <CrossedBanners 
+        messages1={ctaMessages1}
+        messages2={ctaMessages2}
+      />
       <CTA />
       <Footer />
     </div>

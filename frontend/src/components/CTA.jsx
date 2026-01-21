@@ -8,7 +8,7 @@ const CTA = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#0A1A40] via-[#0A1A40] to-[#0d2557]">
+    <section className="py-20 bg-gradient-to-br from-[#0A1A40] via-[#0A1A40] to-[#0d2557] pt-0 relative z-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto relative">
           {/* Decorative elements */}
