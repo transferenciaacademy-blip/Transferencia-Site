@@ -18,6 +18,7 @@ const Header = () => {
     { label: 'Início', href: '#home' },
     { label: 'Sobre', href: '#sobre' },
     { label: 'Como Funciona', href: '#como-funciona' },
+    { label: 'Depoimentos', href: '#depoimentos' },
   ];
 
   const handleCTA = () => {

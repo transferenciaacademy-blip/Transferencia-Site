@@ -26,10 +26,10 @@ const CTA = () => {
 
               {/* Heading */}
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Pronto para realizar seu sonho?
+                Pronto para conquistar sua vaga em Medicina?
               </h2>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Não perca mais tempo! Garanta sua vaga na próxima turma e comece sua jornada rumo à universidade dos seus sonhos.
+                Não perca mais tempo! Garanta sua vaga na próxima turma e comece sua jornada rumo à faculdade de Medicina dos seus sonhos.
               </p>
 
               {/* Benefits */}

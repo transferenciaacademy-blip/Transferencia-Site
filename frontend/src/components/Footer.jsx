@@ -60,7 +60,8 @@ const Footer = () => {
               {[
               { label: 'Início', href: '#home' },
               { label: 'Sobre Nós', href: '#sobre' },
-              { label: 'Como Funciona', href: '#como-funciona' }].
+              { label: 'Como Funciona', href: '#como-funciona' },
+              { label: 'Depoimentos', href: '#depoimentos' }].
               map((link, index) =>
               <li key={index}>
                   <button
