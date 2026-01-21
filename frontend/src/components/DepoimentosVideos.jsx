@@ -47,7 +47,7 @@ const DepoimentosVideos = () => {
         </div>
 
         {/* Carousel */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <Carousel
             opts={{
               align: "start",
@@ -55,18 +55,19 @@ const DepoimentosVideos = () => {
             }}
             className="w-full"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-2 md:-ml-4">
               {videos.map((video) => (
-                <CarouselItem key={video.id} className="md:basis-1/2 lg:basis-1/1">
-                  <div className="p-4">
+                <CarouselItem key={video.id} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
                     <Card className="border-0 shadow-2xl overflow-hidden bg-white">
                       <CardContent className="p-0">
-                        {/* Video Container */}
-                        <div className="relative aspect-video bg-black">
+                        {/* Video Container - 9:16 Aspect Ratio */}
+                        <div className="relative w-full" style={{ aspectRatio: '9/16' }}>
                           <video
                             controls
-                            className="w-full h-full object-contain"
+                            className="w-full h-full object-cover bg-black"
                             preload="metadata"
+                            playsInline
                           >
                             <source src={video.url} type="video/mp4" />
                             Seu navegador não suporta a tag de vídeo.
@@ -74,11 +75,11 @@ const DepoimentosVideos = () => {
                         </div>
 
                         {/* Video Info */}
-                        <div className="p-6 bg-gradient-to-br from-gray-50 to-white">
-                          <h3 className="text-xl font-bold text-[#0A1A40] mb-2">
+                        <div className="p-4 bg-gradient-to-br from-gray-50 to-white">
+                          <h3 className="text-lg font-bold text-[#0A1A40] mb-1">
                             {video.nome}
                           </h3>
-                          <p className="text-gray-600">
+                          <p className="text-sm text-gray-600">
                             {video.descricao}
                           </p>
                         </div>
