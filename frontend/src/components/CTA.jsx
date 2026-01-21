@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 const CTA = () => {
   const handleCTA = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Quero me inscrever na Transferência Academy', '_blank');
+    window.open('https://transferenciaacademy.classbuild.com/payments/classpay-asaas/purchase/transferencia-academy-2', '_blank');
   };
 
   return (

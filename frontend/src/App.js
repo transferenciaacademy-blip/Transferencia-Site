@@ -4,8 +4,6 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Sobre from "./components/Sobre";
 import ComoFunciona from "./components/ComoFunciona";
-import Editais from "./components/Editais";
-import Depoimentos from "./components/Depoimentos";
 import Diferenciais from "./components/Diferenciais";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
@@ -17,8 +15,6 @@ const Home = () => {
       <Hero />
       <Sobre />
       <ComoFunciona />
-      <Editais />
-      <Depoimentos />
       <Diferenciais />
       <CTA />
       <Footer />

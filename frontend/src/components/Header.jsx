@@ -18,12 +18,10 @@ const Header = () => {
     { label: 'Início', href: '#home' },
     { label: 'Sobre', href: '#sobre' },
     { label: 'Como Funciona', href: '#como-funciona' },
-    { label: 'Editais', href: '#editais' },
-    { label: 'Depoimentos', href: '#depoimentos' },
   ];
 
   const handleCTA = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre a Transferência Academy', '_blank');
+    window.open('https://transferenciaacademy.classbuild.com/payments/classpay-asaas/purchase/transferencia-academy-2', '_blank');
   };
 
   const scrollToSection = (href) => {

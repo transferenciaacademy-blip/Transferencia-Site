@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   const handleCTA = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre a Transferência Academy', '_blank');
+    window.open('https://transferenciaacademy.classbuild.com/payments/classpay-asaas/purchase/transferencia-academy-2', '_blank');
   };
 
   return (
@@ -46,12 +46,12 @@ const Hero = () => {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button
-              onClick={() => document.getElementById('editais').scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' })}
               size="lg"
               variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-[#0A1A40] font-bold text-lg px-8 py-6 rounded-lg transition-all duration-300"
             >
-              Ver Editais Abertos
+              Saiba Mais
             </Button>
           </div>
 
