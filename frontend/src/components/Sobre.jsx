@@ -26,7 +26,7 @@ const Sobre = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-white pt-0">
+    <section id="sobre" className="py-20 bg-white pt-0 relative z-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}

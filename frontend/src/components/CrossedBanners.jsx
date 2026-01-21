@@ -3,7 +3,7 @@ import MarqueeBanner from './MarqueeBanner';
 
 const CrossedBanners = ({ messages1, messages2 }) => {
   return (
-    <div className="relative h-[300px] overflow-hidden bg-gradient-to-b from-[#0A1A40] to-white -mt-1 -mb-1">
+    <div className="relative h-[300px] overflow-visible bg-transparent -my-32 z-20">
       {/* Container para as faixas cruzadas */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Faixa Dourada - diagonal da esquerda superior para direita inferior (/) */}
