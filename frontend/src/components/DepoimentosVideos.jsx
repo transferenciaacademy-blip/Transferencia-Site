@@ -28,6 +28,18 @@ const DepoimentosVideos = () => {
       nome: 'Aluno Aprovado - UNICAMP',
       descricao: 'Experiência com a Transferência Academy',
     },
+    {
+      id: 4,
+      url: 'https://customer-assets.emergentagent.com/job_transferprep/artifacts/w6slre6v_La%C3%ADs.mp4',
+      nome: 'Laís - Aprovada em Medicina',
+      descricao: 'Jornada de sucesso na transferência',
+    },
+    {
+      id: 5,
+      url: 'https://customer-assets.emergentagent.com/job_transferprep/artifacts/9g74l8rm_Mila.mp4',
+      nome: 'Mila - Transferência Medicina',
+      descricao: 'Como conquistei minha vaga dos sonhos',
+    },
   ];
 
   return (
