@@ -20,11 +20,11 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_transferprep/artifacts/kafcrfcg_Logo_alta_qualidade-removebg-preview.png" 
+              <img
+                src="https://customer-assets.emergentagent.com/job_transferprep/artifacts/kafcrfcg_Logo_alta_qualidade-removebg-preview.png"
                 alt="Transferência Academy Logo"
-                className="h-14 w-auto"
-              />
+                className="h-14 w-auto" />
+
               <div>
                 <h3 className="text-xl font-bold">Transferência</h3>
                 <p className="text-sm text-[#D4A017]">Academy</p>
@@ -35,21 +35,21 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               {[
-                { icon: Facebook, link: '#' },
-                { icon: Instagram, link: '#' },
-                { icon: Linkedin, link: '#' },
-                { icon: Youtube, link: '#' },
-              ].map((social, index) => (
-                <a
-                  key={index}
-                  href={social.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/5 hover:bg-[#D4A017] rounded-lg flex items-center justify-center transition-colors duration-300 border border-white/10"
-                >
+              { icon: Facebook, link: '#' },
+              { icon: Instagram, link: '#' },
+              { icon: Linkedin, link: '#' },
+              { icon: Youtube, link: '#' }].
+              map((social, index) =>
+              <a
+                key={index}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/5 hover:bg-[#D4A017] rounded-lg flex items-center justify-center transition-colors duration-300 border border-white/10">
+
                   <social.icon className="w-5 h-5" />
                 </a>
-              ))}
+              )}
             </div>
           </div>
 
@@ -58,44 +58,44 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6 text-[#D4A017]">Links Rápidos</h4>
             <ul className="space-y-3">
               {[
-                { label: 'Início', href: '#home' },
-                { label: 'Sobre Nós', href: '#sobre' },
-                { label: 'Como Funciona', href: '#como-funciona' },
-                { label: 'Editais', href: '#editais' },
-                { label: 'Depoimentos', href: '#depoimentos' },
-              ].map((link, index) => (
-                <li key={index}>
+              { label: 'Início', href: '#home' },
+              { label: 'Sobre Nós', href: '#sobre' },
+              { label: 'Como Funciona', href: '#como-funciona' },
+              { label: 'Editais', href: '#editais' },
+              { label: 'Depoimentos', href: '#depoimentos' }].
+              map((link, index) =>
+              <li key={index}>
                   <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-gray-300 hover:text-[#D4A017] transition-colors duration-300 text-left"
-                  >
+                  onClick={() => scrollToSection(link.href)}
+                  className="text-gray-300 hover:text-[#D4A017] transition-colors duration-300 text-left">
+
                     {link.label}
                   </button>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
           {/* Cursos Populares */}
-          <div>
+          <div className="!opacity-[0%]">
             <h4 className="text-lg font-bold mb-6 text-[#D4A017]">Cursos Populares</h4>
             <ul className="space-y-3">
-              {['Medicina', 'Direito', 'Engenharia', 'Administração', 'Arquitetura', 'Psicologia'].map((curso, index) => (
-                <li key={index}>
+              {['Medicina', 'Direito', 'Engenharia', 'Administração', 'Arquitetura', 'Psicologia'].map((curso, index) =>
+              <li key={index}>
                   <button
-                    onClick={handleCTA}
-                    className="text-gray-300 hover:text-[#D4A017] transition-colors duration-300 text-left"
-                  >
+                  onClick={handleCTA}
+                  className="text-gray-300 hover:text-[#D4A017] transition-colors duration-300 text-left">
+
                     {curso}
                   </button>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
           {/* Contato */}
           <div>
-            <h4 className="text-lg font-bold mb-6 text-[#D4A017]">Contato</h4>
+            <h4 className="!font-bold !text-lg mb-6 text-[#D4A017]">Contato</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-0.5" />
@@ -105,8 +105,8 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-0.5" />
-                <a href="tel:+5511999999999" className="text-gray-300 hover:text-[#D4A017] transition-colors duration-300">
-                  (11) 99999-9999
+                <a href="tel:+5511999999999" className="text-gray-300 hover:text-[#D4A017] transition-colors duration-300">(17) 99671-2860 
+
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -128,22 +128,22 @@ const Footer = () => {
             <div className="flex gap-6 text-sm">
               <button
                 onClick={handleCTA}
-                className="text-gray-400 hover:text-[#D4A017] transition-colors duration-300"
-              >
+                className="text-gray-400 hover:text-[#D4A017] transition-colors duration-300">
+
                 Política de Privacidade
               </button>
               <button
                 onClick={handleCTA}
-                className="text-gray-400 hover:text-[#D4A017] transition-colors duration-300"
-              >
+                className="text-gray-400 hover:text-[#D4A017] transition-colors duration-300">
+
                 Termos de Uso
               </button>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
