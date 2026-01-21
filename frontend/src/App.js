@@ -11,27 +11,40 @@ import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 
 const Home = () => {
-  const motivationalMessages = [
+  const motivationalMessages1 = [
     "Conquiste sua vaga em Medicina na universidade dos seus sonhos",
     "Sua aprovação começa aqui - Método comprovado por centenas de alunos",
     "Transforme seu futuro - Prepare-se para a transferência em Medicina",
+  ];
+
+  const motivationalMessages2 = [
     "Realize seu sonho de estudar Medicina nas melhores universidades",
     "Não desista! A Transferência Academy está com você em cada passo",
+    "500+ alunos aprovados - Junte-se aos vencedores",
   ];
 
   return (
     <div id="home">
       <Header />
       <Hero />
-      <MarqueeBanner messages={motivationalMessages} />
+      {/* Faixa Dourada - rola para esquerda */}
+      <MarqueeBanner 
+        messages={motivationalMessages1} 
+        bgColor="bg-[#D4A017]"
+        textColor="text-[#0A1A40]"
+        direction="left"
+      />
+      {/* Faixa Azul - rola para direita */}
+      <MarqueeBanner 
+        messages={motivationalMessages2} 
+        bgColor="bg-[#0A1A40]"
+        textColor="text-[#D4A017]"
+        direction="right"
+      />
       <Sobre />
-      <MarqueeBanner messages={motivationalMessages} />
       <ComoFunciona />
-      <MarqueeBanner messages={motivationalMessages} />
       <DepoimentosVideos />
-      <MarqueeBanner messages={motivationalMessages} />
       <Diferenciais />
-      <MarqueeBanner messages={motivationalMessages} />
       <CTA />
       <Footer />
     </div>

@@ -43,6 +43,15 @@ html {
     }
 }
 
+@keyframes marqueeReverse {
+    0% {
+        transform: translateX(-33.333%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 .marquee-container {
     display: flex;
     overflow: hidden;
@@ -53,6 +62,10 @@ html {
     display: flex;
     animation: marquee 30s linear infinite;
     white-space: nowrap;
+}
+
+.marquee-reverse {
+    animation: marqueeReverse 30s linear infinite;
 }
 
 .marquee-item {
