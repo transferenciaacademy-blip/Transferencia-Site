@@ -12,8 +12,8 @@ const Editais = () => {
   const filteredEditais = useMemo(() => {
     return mockEditais.filter((edital) => {
       const matchesSearch =
-        edital.universidade.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        edital.curso.toLowerCase().includes(searchTerm.toLowerCase());
+      edital.universidade.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      edital.curso.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesStatus = statusFilter === 'todos' || edital.status === statusFilter;
       return matchesSearch && matchesStatus;
     });
@@ -52,8 +52,8 @@ const Editais = () => {
                   placeholder="Buscar por universidade ou curso..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 bg-white rounded-lg text-[#0A1A40] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A017]"
-                />
+                  className="w-full pl-12 pr-4 py-3 bg-white rounded-lg text-[#0A1A40] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A017]" />
+
               </div>
 
               {/* Status Filter */}
@@ -62,8 +62,8 @@ const Editais = () => {
                 <select
                   value={statusFilter}
                   onChange={(e) => setStatusFilter(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 bg-white rounded-lg text-[#0A1A40] focus:outline-none focus:ring-2 focus:ring-[#D4A017] appearance-none cursor-pointer"
-                >
+                  className="w-full pl-12 pr-4 py-3 bg-white rounded-lg text-[#0A1A40] focus:outline-none focus:ring-2 focus:ring-[#D4A017] appearance-none cursor-pointer">
+
                   <option value="todos">Todos os Editais</option>
                   <option value="aberto">Editais Abertos</option>
                   <option value="fechado">Editais Fechados</option>
@@ -75,21 +75,21 @@ const Editais = () => {
 
         {/* Editais Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {filteredEditais.length > 0 ? (
-            filteredEditais.map((edital) => (
-              <Card
-                key={edital.id}
-                className="bg-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 overflow-hidden group"
-              >
-                <CardHeader className="bg-gradient-to-br from-gray-50 to-white pb-4">
+          {filteredEditais.length > 0 ?
+          filteredEditais.map((edital) =>
+          <Card
+            key={edital.id}
+            className="bg-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 overflow-hidden group">
+
+                <CardHeader className="!opacity-[0%]">
                   <div className="flex items-start justify-between mb-2">
                     <Badge
-                      className={`${
-                        edital.status === 'aberto'
-                          ? 'bg-green-500 hover:bg-green-600'
-                          : 'bg-gray-400 hover:bg-gray-500'
-                      } text-white`}
-                    >
+                  className={`${
+                  edital.status === 'aberto' ?
+                  'bg-green-500 hover:bg-green-600' :
+                  'bg-gray-400 hover:bg-gray-500'} text-white`
+                  }>
+
                       {edital.status === 'aberto' ? 'Aberto' : 'Fechado'}
                     </Badge>
                     <div className="w-10 h-10 bg-[#D4A017]/10 rounded-full flex items-center justify-center group-hover:bg-[#D4A017] transition-colors duration-300">
@@ -102,10 +102,10 @@ const Editais = () => {
                   <p className="text-[#D4A017] font-bold text-lg">{edital.curso}</p>
                 </CardHeader>
                 <CardContent className="pt-6">
-                  <div className="space-y-4">
+                  <div className="!opacity-[0%]">
                     <div className="flex items-center gap-3 text-sm text-gray-600">
                       <Users className="w-4 h-4 text-[#D4A017]" />
-                      <span>
+                      <span className="!text-sm !opacity-[0%] !shadow-sm">
                         <strong className="text-[#0A1A40]">{edital.vagas}</strong> vagas disponíveis
                       </span>
                     </div>
@@ -116,12 +116,12 @@ const Editais = () => {
                         <div>Fechamento: {formatDate(edital.dataFechamento)}</div>
                       </div>
                     </div>
-                    <div className="pt-4 border-t border-gray-100">
-                      <p className="text-xs text-gray-500 mb-4">{edital.requisitos}</p>
+                    <div className="!opacity-[0%]">
+                      <p className="!text-xs !mb-[1px] text-gray-500">{edital.requisitos}</p>
                       <Button
-                        onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Tenho interesse no edital de ' + edital.curso, '_blank')}
-                        className="w-full bg-[#D4A017] hover:bg-[#B8900F] text-[#0A1A40] font-bold"
-                      >
+                    onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Tenho interesse no edital de ' + edital.curso, '_blank')}
+                    className="w-full bg-[#D4A017] hover:bg-[#B8900F] text-[#0A1A40] font-bold">
+
                         Saber Mais
                         <ExternalLink className="w-4 h-4 ml-2" />
                       </Button>
@@ -129,12 +129,12 @@ const Editais = () => {
                   </div>
                 </CardContent>
               </Card>
-            ))
-          ) : (
-            <div className="col-span-full text-center py-12">
+          ) :
+
+          <div className="col-span-full text-center py-12">
               <p className="text-white text-lg">Nenhum edital encontrado com os filtros selecionados.</p>
             </div>
-          )}
+          }
         </div>
 
         {/* CTA Bottom */}
@@ -143,14 +143,14 @@ const Editais = () => {
           <Button
             onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de informações sobre editais', '_blank')}
             variant="outline"
-            className="border-2 border-[#D4A017] text-[#D4A017] hover:bg-[#D4A017] hover:text-[#0A1A40] font-bold"
-          >
+            className="border-2 border-[#D4A017] text-[#D4A017] hover:bg-[#D4A017] hover:text-[#0A1A40] font-bold">
+
             Entre em Contato
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Editais;
