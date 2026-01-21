@@ -2,7 +2,7 @@ import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import MarqueeBanner from "./components/MarqueeBanner";
+import CrossedBanners from "./components/CrossedBanners";
 import Sobre from "./components/Sobre";
 import ComoFunciona from "./components/ComoFunciona";
 import DepoimentosVideos from "./components/DepoimentosVideos";
@@ -27,19 +27,10 @@ const Home = () => {
     <div id="home">
       <Header />
       <Hero />
-      {/* Faixa Dourada - rola para esquerda */}
-      <MarqueeBanner 
-        messages={motivationalMessages1} 
-        bgColor="bg-[#D4A017]"
-        textColor="text-[#0A1A40]"
-        direction="left"
-      />
-      {/* Faixa Azul - rola para direita */}
-      <MarqueeBanner 
-        messages={motivationalMessages2} 
-        bgColor="bg-[#0A1A40]"
-        textColor="text-[#D4A017]"
-        direction="right"
+      {/* Faixas cruzadas em formato X */}
+      <CrossedBanners 
+        messages1={motivationalMessages1}
+        messages2={motivationalMessages2}
       />
       <Sobre />
       <ComoFunciona />
