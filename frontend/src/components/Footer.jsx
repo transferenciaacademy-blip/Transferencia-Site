@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0A1A40] text-white pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -68,23 +68,6 @@ const Footer = () => {
                   className="text-gray-300 hover:text-[#D4A017] transition-colors duration-300 text-left">
 
                     {link.label}
-                  </button>
-                </li>
-              )}
-            </ul>
-          </div>
-
-          {/* Cursos Populares */}
-          <div className="!opacity-[0%]">
-            <h4 className="text-lg font-bold mb-6 text-[#D4A017]">Cursos Populares</h4>
-            <ul className="space-y-3">
-              {['Medicina', 'Direito', 'Engenharia', 'Administração', 'Arquitetura', 'Psicologia'].map((curso, index) =>
-              <li key={index}>
-                  <button
-                  onClick={handleCTA}
-                  className="text-gray-300 hover:text-[#D4A017] transition-colors duration-300 text-left">
-
-                    {curso}
                   </button>
                 </li>
               )}
