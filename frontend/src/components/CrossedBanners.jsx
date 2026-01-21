@@ -3,11 +3,11 @@ import MarqueeBanner from './MarqueeBanner';
 
 const CrossedBanners = ({ messages1, messages2 }) => {
   return (
-    <div className="relative h-[250px] overflow-hidden bg-white">
+    <div className="relative h-[300px] overflow-hidden bg-gradient-to-b from-[#0A1A40] to-white">
       {/* Container para as faixas cruzadas */}
       <div className="absolute inset-0 flex items-center justify-center">
-        {/* Faixa Dourada - diagonal da esquerda para direita (/) */}
-        <div className="absolute w-[150%] origin-center" style={{ transform: 'rotate(-12deg) translateY(-70px)' }}>
+        {/* Faixa Dourada - diagonal da esquerda superior para direita inferior (/) */}
+        <div className="absolute w-[160%] origin-center" style={{ transform: 'rotate(-10deg) translateY(-60px)' }}>
           <MarqueeBanner 
             messages={messages1} 
             bgColor="bg-[#D4A017]"
@@ -16,8 +16,8 @@ const CrossedBanners = ({ messages1, messages2 }) => {
           />
         </div>
 
-        {/* Faixa Azul - diagonal da direita para esquerda (\) */}
-        <div className="absolute w-[150%] origin-center" style={{ transform: 'rotate(12deg) translateY(70px)' }}>
+        {/* Faixa Azul - diagonal da direita superior para esquerda inferior (\) */}
+        <div className="absolute w-[160%] origin-center" style={{ transform: 'rotate(10deg) translateY(60px)' }}>
           <MarqueeBanner 
             messages={messages2} 
             bgColor="bg-[#0A1A40]"
