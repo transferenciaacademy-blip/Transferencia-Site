@@ -81,7 +81,7 @@ const Editais = () => {
             key={edital.id}
             className="bg-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-0 overflow-hidden group">
 
-                <CardHeader className="!opacity-[0%]">
+                <CardHeader className="flex flex-col space-y-1.5 !px-[1px] !opacity-[0%]">
                   <div className="flex items-start justify-between mb-2">
                     <Badge
                   className={`${
