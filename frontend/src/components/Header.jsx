@@ -43,7 +43,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('#home')}>
             <img 
-              src="https://customer-assets.emergentagent.com/job_transferprep/artifacts/kafcrfcg_Logo_alta_qualidade-removebg-preview.png" 
+              src="https://customer-assets.emergentagent.com/job_transferprep/artifacts/qfl5khc7_Logo_alta_qualidade-removebg-preview%20%281%29.png" 
               alt="Transferência Academy Logo"
               className="h-12 w-auto"
             />
